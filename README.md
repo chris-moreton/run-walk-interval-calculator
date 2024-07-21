@@ -2,6 +2,8 @@ I've wanted this algorithm for ages and couldn't find it. AI was surprisingly po
 
 It's just a simple interval calculator for people like me who can't run for a prolonged period of time but still want to set targets for 5k/10k runs, etc...
 
+It's a hack and not robust, so crashes will happen with some parameters.
+
 ```
 target_distance_metres = 5000
 target_time_seconds = 1800
