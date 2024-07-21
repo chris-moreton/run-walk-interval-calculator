@@ -2,6 +2,8 @@ I've wanted this algorithm for ages and couldn't find it.
 
 It's just a simple interval calculator for people like me who can't run for a prolonged period of time but still want to set targets for 5k/10k runs, etc...
 
+I will be using it in an Android app for my personal use.
+
 AI was surprisingly poor at helping me generate it. I tried various explicit descriptions of what I was after, but it just couldn't really come up with the goods. So I had to do it myself. It did help me with Python syntax, however, as I don't know Python at all.
 
 It's a hack and not robust, so crashes may happen with some parameters.
