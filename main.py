@@ -20,6 +20,10 @@ def calculate_optimal_intervals(target_distance_metres, target_time_seconds, tar
     spare_time_seconds = target_time_seconds - run_time_seconds
     print(f"Spare time: {spare_time_seconds:.2f} seconds")
 
+    if spare_time_seconds <= 0:
+        print("Not enough time to run the whole distance")
+        return [("Run", target_distance_metres / 1000, current_run_speed_kph)]
+
     # Initialize walking interval to 1 second
 
     walk_interval_seconds = 1
@@ -82,9 +86,9 @@ def calculate_optimal_intervals(target_distance_metres, target_time_seconds, tar
 
 # Example parameters
 target_distance_metres = 5000
-target_time_seconds = 1800
+target_time_seconds = 2100
 target_run_speed_kph = 12
-target_walk_speed_kph = 6.5
+target_walk_speed_kph = 5.5
 max_walk_speed_kph = 7
 max_run_speed_kph = 12
 min_walking_interval_seconds = 45
