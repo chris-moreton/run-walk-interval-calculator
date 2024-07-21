@@ -27,7 +27,6 @@ def calculate_optimal_intervals(target_distance_metres, target_time_seconds, tar
     walk_interval_seconds = 1
     reduced_run_distance_metres = target_distance_metres
     while spare_time_seconds > 0:
-        # Convert speed from kph to m/s for accurate calculation
         walk_speed_mps = current_walk_speed_kph * 1000 / 3600
         run_speed_mps = current_run_speed_kph * 1000 / 3600
 
