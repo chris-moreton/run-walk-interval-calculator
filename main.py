@@ -83,12 +83,10 @@ def calculate_optimal_intervals(target_distance_metres, target_time_seconds, tar
 
 # Example parameters
 target_distance_metres = 5000
-target_time_seconds = 2100
+target_time_seconds = 2400
 target_run_speed_kph = 12
 target_walk_speed_kph = 5.5
-max_walk_speed_kph = 7
-max_run_speed_kph = 12
-min_walking_interval_seconds = 45
+min_walking_interval_seconds = 90
 
 intervals = calculate_optimal_intervals(target_distance_metres, target_time_seconds,
                                         target_run_speed_kph, target_walk_speed_kph, min_walking_interval_seconds)
